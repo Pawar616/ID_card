@@ -19,13 +19,17 @@ function generateIdCards() {
             const card = document.createElement('div');
             card.className = 'col-md-8 mb-4';
             card.innerHTML = `
-              <div class="card border-primary">
+            
+              <div class="card border-black border-3 ">
+              <div class="border ">
+            <img class="head_img" src="./top_background_img.jpg" alt="">
+          </div>
                 <div class="card-body">
                   <div class="row">
                     <div class="col-md-4 text-center">
                       <p class="text-start">अनु क्र : <span class="sr_no">${row['sr.no.']}</span></p>
-                      <div class="border border-primary p-2">
-                        <img id="img-${index}" src="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="Avatar" class="img-fluid rounded-circle"/>
+                      <div class="border border-black p-2">
+                        <img id="img-${index}" src="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="Avatar" class="img-fluid "/>
                         <input type="file" accept="image/*" onchange="loadImage(event, ${index})" class="form-control mt-2">
                       </div>
                     </div>
